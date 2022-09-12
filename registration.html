@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Add authorship metadata and link CSS and JS files -->
+    <link rel="stylesheet" href="weeklykitten.css">
+    <title>Lab 5 - JavaScript 1</title>
+    
+</head>
+<body>
+    <div class="formcontainer">
+        <h1>Weekly Kitten Pictures Subsription</h1>
+        <hr>
+        <form name=" form" id="form" action="registration.html" method="get" onsubmit="return validate();">
+            <!-- You will need to write the validate function for this form. -->
+
+            <div class="textfield form-control">
+                <label for="email">Email Address</label>
+                <input type="text" name="email" id="email" placeholder="email">
+                <small class="alert" id="emailError"></small>
+
+            </div>
+
+            <div class="textfield form-control">
+                <label for="username">User Name</label>
+                <input type="text" name="username" id="username" placeholder="username">
+                <small class="alert" id="usernameError"></small>
+
+            </div>
+
+            <div class="textfield form-control">
+                <label for="password1">Password</label>
+                <input type="password" name="password" id="password1" placeholder="password">
+                <small class="alert" id="password1Error"></small>
+
+            </div>
+        
+            <div class="textfield form-control">
+                <label for="password2">Re-type Password</label>
+                <input type="password" id="password2" placeholder="confirm password">
+                <small class="alert" id="password2Error"></small>
+
+            </div>
+
+            <div class="checkbox form-control">
+                <input type="checkbox" name="newsletter" id="newsletter">
+                <label for="newsletter">I agree to receive Weekly Kitten Pictures newsletters</label>
+
+            </div>
+
+            <div class="checkbox form-control">
+                <input type="checkbox" name="terms" id="terms">
+                <label for="terms">I agree to the terms and conditions</label>
+                <small class="alert" id="termsError"></small>
+
+            </div>
+
+            <button type="submit" id="sign-up">Sign-Up</button>
+            <button type="reset" id="reset">Reset</button>
+
+        </form>
+    </div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
